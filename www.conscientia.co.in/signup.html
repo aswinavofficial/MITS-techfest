@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from www.conscientia.co.in/signup.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 08 Feb 2018 13:19:47 GMT -->
+<head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Signup | Conscientia 2018</title>
+        <link rel="icon" type="image/png" href="images/clogob.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+        <link rel="stylesheet" href="../www.w3schools.com/w3css/4/w3.css">
+        <script src="js/main.js"></script>
+        <link rel="stylesheet" media="screen" href="css/style.css">
+        <style>
+            body{
+                width: 100vw;
+                height: 100vh;
+                overflow-x: hidden;
+            }
+        </style>
+   
+</head>
+<body>
+    <div class="background1">
+        <h2 class="signupt">Personal Details</h2>
+        <div>
+            <label for="first_name" class="label">First Name</label>
+            <input type="text" name="first_name" class="w3-input w3-padding-5  w3-black" id="first_name">
+        </div>    
+        <div>
+            <label for="last_name" class="label">Last Name</label>
+            <input type="text" name="last_name" class="w3-input w3-padding-5 w3-border-bottom w3-black" id="last_name">
+        </div>     
+        <div>
+                <label for="gender" class="label">Gender</label><br><br>
+                <input type="radio" name="gender" value="Male"><span>Male</span>
+                <input type="radio" name="gender" value="Female"><span>Female</span>
+                <input type="radio" name="gender" value="Others"><span>Others</span>
+            </div>     
+        <h2 class="signupt">Contact Information</h2>
+        <div>
+            <label for="email" class="label">Email ID</label>
+            <input type="email" name="email" class="w3-input w3-padding-5 w3-border-bottom w3-black" id="email">
+        </div>    
+        <div>
+            <label for="ph_no" class="label">Phone number</label>
+            <input type="tel" name="ph_no" class="w3-input w3-padding-5 w3-border-bottom w3-black" id="ph_no" placeholder="Enter a 10 digit mobile number">
+        </div>    
+        <h2 class="signupt">Educational Details</h2>
+        <div>
+            <label for="clg" class="label">College</label>
+            <input type="text" class="w3-input w3-padding-5 w3-border-bottom w3-black" name="clg" id="clg">
+        </div>    
+        <div>
+            <label for="year" class="label">Academic Year</label>
+			<select class="w3-input w3-padding-5 w3-border-bottom w3-black" id="year">
+				  <option value="1" class="w3-input w3-padding-5 w3-border-bottom w3-black year">1st Year</option>
+				  <option value="2" class="w3-input w3-padding-5 w3-border-bottom w3-black year">2nd Year</option>
+				  <option value="3" class="w3-input w3-padding-5 w3-border-bottom w3-black year">3rd Year</option>
+				  <option value="4" class="w3-input w3-padding-5 w3-border-bottom w3-black year">4th Year</option>
+				  <option value="5" class="w3-input w3-padding-5 w3-border-bottom w3-black year">5th Year</option>
+			</select> 
+		</div>    
+        <div>
+            <label for="branch" class="label">Branch <p>( Format:UG/PG/Ph.d_{Branch} )</p></label><br>
+            <input type="text" name="branch" placeholder="UG_Avionics" class="w3-input w3-padding-5 w3-border-bottom w3-black" id="branch">
+        </div>    
+        <h2 class="signupt">Login Information</h2>
+        <div>
+            <label for="username" class="label">Username</label>
+            <input type="text" name="username" class="w3-input w3-padding-5 w3-border-bottom w3-black" id="username">
+        </div>    
+        <div>
+            <label for="password" class="label">Password</label>
+            <input type="password" name="password" class="w3-input w3-padding-5 w3-border-bottom w3-black" id="password">
+        </div>    
+        <div>
+            <label for="cpassword" class="label">Confirm Password</label>
+            <input type="password" name="cpassword" class="w3-input w3-padding-5 w3-border-bottom w3-black" id="cpassword">
+        </div>
+        	
+        <p id="TC">By signing up, you accept to all the <a href="T%26C.pdf" target="_blank" style="text-decoration: underline">TERMS AND CONDITIONS</a> </p>
+            
+        <p id="signerr"></p>
+        <button onclick="sign1()" id="signup">Sign Up</button>
+        
+    </div>    
+
+
+</body>
+
+<!-- Mirrored from www.conscientia.co.in/signup.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 08 Feb 2018 13:19:48 GMT -->
+</html>

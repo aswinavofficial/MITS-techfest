@@ -1,0 +1,297 @@
+
+
+
+    
+@media screen and (orientation:portrait)
+    {   
+		.displayArea{
+			text-align: center;
+		}		
+		.displayArea ul{
+			text-align: left;
+		}
+.displayArea li{
+	font-size: 1.5vh;
+}
+#logos {
+	height: 5vh;	
+}
+.content{
+    color: white;
+	font-family: 'icon3';
+    font-size:1.75vh;
+    margin-top: 3vh;
+}
+        .title{
+    font-size:2vh;
+            
+        }
+        .listall{
+            font-size: 2vh;
+        }
+
+#menubar{}
+#overlap{}
+#details{}
+#item1{display: inline-block;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    /* height: 100%; */
+    height: 35%;
+    background-image: url(images/harley-black.png);
+    background-position: 48% 5%;
+    background-size: 38%;
+    background-repeat: no-repeat;
+    background-color: #ff7070;
+}
+
+
+
+    #item2 {
+        position: relative;
+        top: 0px;
+        display: inline-block;
+        right: 0px;
+        width: 100%;
+        height: 35%;
+        background-color: rgb(0, 128, 87);
+        background-image: url(images/drone-black.png);
+        background-size: 34%;
+        background-repeat: no-repeat;
+        background-position: 47% 45%;
+    }
+
+    
+    #item3 {
+        position: relative;
+        display: inline-block;
+        top: 0px;
+        width: 100%;
+        height: 35%;
+        background-color: rgb(255, 255, 255);
+        background-image: url(images/hacker.png);
+        background-size: 32%;
+        background-repeat: no-repeat;
+        background-position: 50% 20%;
+    }
+    #item4 {
+        position: relative;
+        display: block;
+        top: 0px;
+        right: 0%;
+        width: 100%;
+        height: 35%;
+        background-color: rgba(102,83,220,1.00);
+        background-image: url(images/Modal-Rocket.html);
+        background-size: 34%;
+        background-repeat: no-repeat;
+        background-position: 50% 20%;
+    }
+
+    
+#harley{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    opacity: 0;
+    /* height: 100%; */
+    height: 100%;
+    background-image: url(images/harley-full.jpg);
+    background-position: 98% 83%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: black;
+    z-index: 1000;
+    background-blend-mode: luminosity;
+    background-attachment: scroll;
+    transition: width 2s, opacity 2s;
+}
+
+#drone{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    opacity: 0;
+    /* height: 100%; */
+    height: 100%;
+    background-image: url(images/drone-full.html);
+    background-position: 0px 86%;
+    background-size: 87%;
+    background-repeat: no-repeat;
+    background-color: #131313;
+    z-index: 1000;
+    background-blend-mode: luminosity;
+    background-attachment: scroll;
+    transition: width 2s, opacity 2s;
+}
+#hacker{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    opacity: 0;
+    /* height: 100%; */
+    height: 100%;
+    background-image: url(images/anonym.jpg);
+    background-position: 100% 75%;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-color: #131313;
+    z-index: 1000;
+    background-blend-mode: luminosity;
+    background-attachment: scroll;
+    transition: width 2s, opacity 2s;
+}
+
+
+.intro{position: relative;
+    top: 56%;
+    color: white;
+    font-family: 'heading';
+    width: 80%;
+    font-size: 34px;
+    left: 11%;
+}
+
+p {
+    color: white;font-family:content;
+}
+
+#harleyCover{
+
+    position: absolute;
+    display: block;
+    font-family: 'icon3';
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    background-color: black;
+    opacity: 1;
+    margin: 0px;
+    transition: top 1.5s;
+    font-size: 90%;
+    padding: 0px;
+    font-weight: lighter;
+    color:white;
+}
+
+#item1:hover #harleyCover {top:0%;}
+
+#droneCover{
+
+    position: absolute;
+    display: block;
+    font-family: content;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    background-color: black;
+    opacity: 1;
+    margin: 0px;
+    transition: top 1.5s;
+    font-size: 90%;
+    padding: 0px;
+    font-weight: lighter;
+    color:white;
+}
+
+#item2:hover #droneCover {top:0%;}
+
+
+#hackerCover{
+
+    position: absolute;
+    display: block;
+    font-family: content;
+    width: 100%;
+    height: 0%;
+    top: 0%;
+    background-color: black;
+    opacity: 1;
+    margin: 0px;
+    transition: height 1.5s, opacity 1.5s;
+    font-size: 90%;
+    padding: 0px;
+    font-weight: lighter;
+    color: white;
+    z-index: 1000;
+    opacity: 0;
+}
+
+#item3:hover #hackerCover {height:100%;opacity:1;}
+
+
+#RocketCover{
+    display: none;
+    
+  
+}
+
+#buttonToEnter {position: relative;
+    top: 9%;
+    left: 0%;
+    margin: 0px;
+    display: inline-block;
+    width: 100%;
+    height: 8%;
+    font-size: 50px;
+    background-color: #07abab;
+    background-image: url(ok.html);
+    border: 0px;
+    font-family: heading;
+    border-radius: 0px;}
+
+
+    .menu{
+        display: inline-block;
+        width: 24%;
+        height: 79px;
+        left: 0;
+        /* top: -5%; */
+        position: relative;
+        margin: 0px;
+        padding: 0px;
+        background-color: deepskyblue;
+        top: 0%;
+    }
+    #menubar{
+
+        display: block;
+    /* position: absolute; */
+    right: 0;
+    position: relative;
+    top: 9%;
+    }
+    .display{
+        float: left;
+        width: 56.8%;
+        height: 53%;
+        background-color: #640700;
+        opacity: 1;
+        display: block;
+        transition: width 0.6s, opacity 0.5s;
+        position: absolute;
+        left: 20%;
+        top: 21%;
+    }
+
+    .displayArea
+    {
+
+
+    }
+
+    #close{position: absolute;
+        z-index: 100;
+        width: 100px;
+        height: 50px;
+        top: 21%;
+        /* left: 0px; */
+        right: 114px;
+        background-color: bisque;}
+
+    }
+}

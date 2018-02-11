@@ -1,0 +1,122 @@
+@font-face{
+	font-family: 'content';
+	src: url('fonts/raw.ttf');
+}
+
+@font-face{
+	font-family: 'heading';
+	src: url('fonts/earthorbiter.ttf');
+}
+
+@font-face{
+	font-family: 'content';
+	src: url('fonts/adequate.ttf');
+}
+@font-face{
+	font-family: 'icon3';
+	src: url('../font/Lora-Bold.ttf');
+}
+
+
+.details{
+
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    
+    background-repeat: no-repeat;
+    width: 0%;
+    /* block-size: 105%; */
+    background-size: 56%;
+    background-color: black;
+    height: 0%;
+    z-index: -1000;
+    opacity: 0;
+    transition: opacity 1s, display 2s, height 1s, width 1.5s;
+    display: block;
+    background-position: 100% 100%;
+}
+.title{
+    margin-top: 10px;
+    font-family: 'heading';
+    color: skyblue;
+    font-size:20px;
+}
+.content{
+    color: white;
+	font-family: 'icon3';
+    font-size: 1.25vw;
+    margin-top: 3px;
+}
+
+.listall
+{
+    color: white;
+    padding: 2vh;
+    font-size: 1.25vw;
+}
+
+
+.displayArea{width: 70%;
+    position: absolute;
+    left: 13%;
+    background-color: black;
+    opacity:0;
+    top: 10%;
+    /* border: 10px; */
+    border-color: white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: 10px;
+    transition: opacity 3s;
+}
+.displayArea li{
+	color: white;
+}
+#buttonToClose{
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    background-color: #ff0060;
+    border: 0px;
+    width:4.5vh;
+    height:4.5vh;
+    font-size:2.5vh;
+    font-family: 'heading';
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    transition: border-top-right-radius 1s, border-bottom-right-radius 1s;
+}
+#buttonToClose:hover {
+  border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+    
+
+#buttonToclose {
+    
+}
+
+.logos {
+	height: 10vh;
+}
+
+.mob {
+	height: 70vh!important;
+}
+
+#contact {
+	z-index: 200000;
+}
+
+.pay {
+	padding: 10px;
+	margin: 10px;
+	background-color: transparent;
+	border: 2px solid white;
+	color: white;
+	cursor: pointer;
+}

@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from www.conscientia.co.in/Hospitality/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 08 Feb 2018 13:19:48 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Hospitality | Conscientia 2018</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <meta name="description" content="">
+    <link rel="icon" type="image/png" href="../images/clogob.png">
+	<meta name="robots" content="noindex">
+    <link rel="stylesheet" href="../../www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
+	<div id="load_screen">
+        <img src="../images/clogow.png" id=conspic>
+        <div id="loading"></div>
+    </div>
+
+	<link rel="stylesheet" media="screen" href="../css/style.css">
+    <link href="../css/hospi.css" rel="stylesheet" type="text/css">
+	<script src="../js/main.js"></script>	
+    <script src="../../use.fontawesome.com/6c1efadad4.js"></script>
+	
+	
+    <!--         For the Accomodation       -->
+  <script type="text/javascript">
+	function handleElement(i) {
+		var ipt = document.getElementById('u'+i);
+		ipt.onchange = function() {
+			un(i.toString());
+		};
+	}
+
+	function un(id){
+		var ui = document.getElementsByClassName('accuniqueID');
+		var ip = document.getElementById(id);
+		var text = "uniqueid=" + ui[id].value;
+		var xmlhttp;
+		xmlhttp = new XMLHttpRequest();
+		xmlhttp.onreadystatechange = function() {
+			if (this.readyState === 4 && this.status === 200) {
+				ip.value = this.responseText;
+			}
+		};
+		xmlhttp.open("GET.html","../testd41d.html?"+text,true);
+		xmlhttp.send(text);
+	}
+	function addFields() {
+		var num = document.getElementById("number1").value;
+		var con = document.getElementById("con");
+
+		while (con.hasChildNodes()) {
+			con.removeChild(con.lastChild);
+		}
+		for (var i=0;i<num;i++){
+			var text = document.createElement("Label");
+			text.innerHTML = "Unique ID "+(i+1)+ " ";
+			text.className = "acctext";
+			var input = document.createElement("input");
+			input.type = "number";
+			input.name = "unique[]";
+			input.className = "accuniqueID";
+			input.required = true;
+			input.id = "u"+i;
+			var name = document.createElement("input");
+			name.type = "text";
+			name.id = i;
+			name.className = "accname";
+			name.readOnly = "true";
+
+			con.appendChild(text);
+			con.appendChild(input);
+			con.appendChild(name);
+			con.appendChild(document.createElement("br"));
+			handleElement(i);
+		}
+        var button = document.createElement("input");
+        button.type = "submit";
+        button.id = "apply";
+        button.value = "Apply for Accommodation";
+        button.name = "Submit";
+        con.appendChild(button);
+	}
+</script> 
+
+</head>
+
+<body onload="hideloader();">
+      <div class="topnav" id="myTopnav">
+            <a href="../index.html" class="active"><img src="../images/clogow.png" id="logo" ></a>
+            <a class="n" href="../Events/index.html">Events</a>
+            <a class="n" href="../Coming%20Soon/index.html" target="_blank">Exhibitions</a>
+            <a class="n" href="../Workshop/index.html" target="_blank">Workshops</a>
+            <a class="n" href="../Coming%20Soon/index.html" target="_blank">Lectures</a>
+            <a class="n" href="../Campus%20Ambassador/index.html">campus ambassador</a>
+            <a class="n" href="../Sponsors/index.html">Sponsors</a>
+            <a class="n" href="../Contact/index.html">Contact</a>
+          <a class="n" onclick="document.getElementById('contact').style.display='block'" >LogIn</a>            <a class="n" href="javascript:void(0);" style="font-size:20px;color:silver " id="icon" onclick="myFunction()">&#9776;</a>
+            <div id="contact" class="w3-modal"> 
+                <div class="w3-modal-content w3-animate-zoom">
+                    <div class="w3-container w3-black w3-leftbar">
+                       <span onclick="klose()" class="w3-button w3-display-topright w3-large"><p id="close">x</p></span>
+                        <h1 id="Log">LogIn</h1>
+                    </div>
+                    <div class="w3-container w3-black w3-leftbar">
+                    <br>
+                    <div>
+                       
+                     <br>
+                    <div>
+                    <label for="username" id="user">Username</label>
+                    <br><br>
+                  <input type="text"  class="w3-input w3-padding-5 w3-border-bottom w3-black" name="username" id="username">
+                    </div>
+                    <br>    
+                    <div>
+                    <label for="password" id="user">Password</label>
+                    <br>
+                    <br>
+                    <input type="password" class="w3-input w3-padding-5 w3-border-bottom w3-black" name="password" id="password">
+                    </div>    
+                    <p id="signerr"></p>
+                    <button onclick="login()" class="w3-button w3-hover-none w3-tiny w3-black" ><p id="user1">Login</p></button>
+                     </div>
+                    <p><a href="../pass.html" target="_blank">Forgot your password?</a> </p> 
+                    <p><a target="_blank" href="../signup.html">Sign Up</a> </p>            
+                     </div>
+                </div>
+            </div>
+        </div>
+	
+	
+	
+<div class="hospiback">	   
+	<div class="committee">
+		<p id="intro">What is loved more than a comfortable stay after a long day of entertainment! At the hospitality team of Conscientia 2018, we try to make this a reality. We are delighted to have an opportunity to host our participants. </p>
+		<h3>Entry fee details</h3>  
+		<p>For participants – &#8377;150</p>
+		<p>For visitors – &#8377;50</p>
+		
+		
+		<h3>Accomodation Charges</h3>  
+		<p>&#8377;200 per night</p>
+        <i><strong>Caution Deposit of &#8377;200 will be collected which will be refunded.</strong>
+        The charges only include the stay at the institute. The participants will have to manage their meals.</i>
+		
+		
+		<h3>REACHING THE INSTITUTION</h3>
+	<strong>For the ease of the participants, we have listed here the various ways one can reach the institution.</strong>
+		<li>From the Central Bus Station, Thampanoor (in front of Thiruvananthapuram Railway Station) take a bus to Ponmudi, Vithura or Valiamala. Alight at ISRO Junction (or IIST directly in case of a Valiamala bus) and follow sign boards to reach IIST campus. Last bus to Vithura from the Central Bus Station is around 9:30 p.m.</li>
+		<li>Alternatively, board a bus from Thampanoor or East Fort Bus Station (around 1 km from Thampanoor) to Nedumangadu. From Nedumangadu, frequent buses are available for ISRO junction. Auto rickshaws are also available from Nedumangadu to IIST (this would cost anywhere between &#8377;100 - &#8377;150).</li>
+		<li>It may take a little more than an hour to reach IIST from Thiruvananthapuram city under normal traffic conditions.</li>
+		<li>Bus fare would be around &#8377;25 per person from Thampanoor to IIST.</li>
+		<li>Prepaid autos and taxis are available from the Central Railway Station (approx &#8377;300 for an auto and &#8377;600 for a taxi).</li>
+		<li>Route to be followed: Thampanoor/Central Railway station or East Fort – Kowdiar – Peroorkada – Nedumangad –  ISRO Junction – IIST.</li>
+		<li>From the Airport it would be advisable to reach East Fort or Thampanoor and then follow the information given above for buses.</li>
+		<li>Prepaid Taxis are available at the Airport and can be availed. The cost would be anywhere between &#8377;600 – &#8377;750.
+		</li>
+		<div id="cont">
+				<h2>Contact</h2>
+				<p>Umang Tyagi - +91-9497300243</p>
+			</div>	
+			<div class="accomodation">
+                <h2 onclick="document.getElementById('contact').style.display='block'">Login to book accomodation.</h2>			</div>
+			<br>
+			<form method="POST" action="https://www.conscientia.co.in/test.php" target="_blank">
+				<div class="ac" id="acreg">
+					<label for = "number" id="accname"> Number of People </label>
+					<input type="number" onchange="addFields()" id="number1" name="number" min="1">
+					<br>
+					<div id="con"></div>
+				</div>
+			</form>
+		</div>
+	</div>
+	
+<div id="map" style="width:100%;height:400px;background:rgb(7, 7, 7)"></div>
+
+<script>
+function myMap() {
+	var myCenter = new google.maps.LatLng(8.625810, 77.034183)
+	var mapCanvas = document.getElementById("map");
+	var mapOptions = {center: myCenter, zoom:15};
+	var map = new google.maps.Map(mapCanvas, mapOptions);
+	var marker = new google.maps.Marker({position:myCenter});
+	marker.setMap(map);
+  
+	var infowindow = new google.maps.InfoWindow({
+	  content: "Conscientia IIST"
+	});
+	infowindow.open(map,marker);
+  }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoF3Y8TBCwOTfjTmXqELrZf3J3cImrbd0&amp;callback=myMap"></script>
+
+</body>
+
+<!-- Mirrored from www.conscientia.co.in/Hospitality/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 08 Feb 2018 13:19:48 GMT -->
+</html>

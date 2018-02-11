@@ -1,0 +1,500 @@
+#mainbody {
+    margin:0px;
+    padding:0px;
+    background-color: black;
+    width: 100vw;
+}
+
+
+#load_screen
+{
+position: fixed;
+top:0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 9999;
+background: black;
+}
+#loading
+{
+display: block;
+position: absolute;
+left:45%;
+top: 50%;
+width: 200px;
+height: 200px;
+margin: -75px 0 0 -75px;
+border: 3px solid transparent;
+border-top-color: azure;
+border-radius: 50%;
+animation:spin 2s linear infinite;
+-webkit-animation:spin 2s linear infinite;
+}
+
+#loading:before
+{
+content:"";
+position: absolute;
+top: 5px;
+left: 5px;
+bottom:5px;
+right: 5px;
+border: 3px solid transparent;
+border-top-color: aqua;
+border-radius: 50%;
+animation:spin 1.5s linear infinite;
+-webkit-animation:spin 1.5s linear infinite;
+}
+
+#loading:after
+{
+content: "";
+position: absolute;
+top:10px;
+left: 10px;
+bottom:10px;
+right: 10px;
+border: 3px solid transparent;
+border-top-color: chocolate;
+border-radius: 50%;
+animation:spin 3s linear infinite;
+-webkit-animation:spin 3s linear infinite;
+}
+@-webkit-keyframes spin{
+  0%{
+    -webkit-transform:rotate(0deg);
+    -ms-transform: rotate(0deg); 
+     transform: rotate(0deg);
+  }
+  100%{
+    -webkit-transform:rotate(360deg);
+    -ms-transform: rotate(360deg);
+     transform: rotate(360deg);
+  }
+}
+
+@keyframes spin{
+  0%{
+    -webkit-transform:rotate(0deg);
+    -ms-transform: rotate(0deg); 
+     transform: rotate(0deg);
+  }
+  100%{
+    -webkit-transform:rotate(360deg);
+    -ms-transform: rotate(360deg);
+     transform: rotate(360deg);
+  }
+}
+
+
+
+  #conspic
+  {
+    display: block;
+    position:fixed;
+    left:46.5%;
+    top: 53.5%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+  }
+
+
+@font-face{
+	font-family: 'content';
+	src: url('adequate.html');
+}
+
+@font-face{
+	font-family: 'heading';
+	src: url('fonts/earthorbiter.ttf');
+}
+
+@font-face{
+	font-family: 'icon2';
+	src: url('../font/RawengulkSans.ttf');
+}
+
+@font-face{
+	font-family: 'icon3';
+	src: url('../font/Lora-Bold.ttf');
+}
+
+
+    
+@media screen and (orientation:landscape)
+    {   
+#item1{
+    position: absolute;
+    display: inline-block;
+    left: 0px;
+    width: 50%;
+    height:50%;
+    background-image: url(images/harley-black.png);
+    background-position: 48% 5%;
+    background-size: 38%;
+    background-repeat: no-repeat;
+    background-color: #B85D20;
+    overflow: hidden;
+}
+
+
+
+    #item2 {
+        
+        display: inline-block;    
+        position: absolute;
+        right: 0px;
+        width: 50%;
+        height: 50%;
+        background-color: rgb(0, 128, 87);
+        background-image: url(images/drone-black.png);
+        background-size: 34%;
+        background-repeat: no-repeat;
+        background-position: 47% 45%;
+    }
+
+    
+    #item3 {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        width: 50%;
+        height: 50%;
+        background-color: white;
+        background-image: url(images/Untitled-1.png);
+        background-size: 34%;
+        background-repeat: no-repeat;
+        background-position: 47% 20%;
+    }
+    #item4 {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        right: 0%;
+        width: 50%;
+        height: 50%;
+        background-color: #0A4071;
+        background-image: url(images/rocket.png);
+        background-size: 40%;
+        background-repeat: no-repeat;
+        background-position: 50% 20%;
+    }
+
+    
+#harley{
+    position: fixed;
+    top: 61px;
+    left: 0px;
+    width: 0px;
+    opacity: 0;
+    /* height: 100%; */
+    height: 92%;
+    background-image: url(images/harley-full.jpg);
+    background-position-x: -52px;
+    background-position-y: 41px;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-color: black;
+    z-index: 1000;
+    background-position-x: 131%;
+    background-blend-mode: luminosity;
+    background-attachment: scroll;
+    transition: width 2s, opacity 2s;
+}
+
+#drone{
+    position: fixed;
+    top: 61px;
+    left: 0px;
+    width: 0px;
+    opacity:0;
+    /* height: 100%; */
+    height: 92%;
+    background-image: url(images/drone-full.html);
+    background-position-x: -52px;
+    background-position-y: 41px;
+    background-size: 64%;
+    background-repeat: no-repeat;
+    background-color: #131313;
+    z-index: 1000;
+    background-position-x: 0%;
+    background-blend-mode: luminosity;
+    background-attachment: scroll;
+    transition: width 2s, opacity 2s;
+}
+#hacker{
+    position: fixed;
+    top: 61px;
+    left: 0px;
+    width: 0px;
+    opacity: 0;
+    /* height: 100%; */
+    height: 92%;
+    background-image: url(images/anonym.jpg);
+    background-position-x: -52px;
+    background-position-y: 75px;
+    background-size: 81%;
+    background-repeat: no-repeat;
+    background-color: #131313;
+    z-index: 1000;
+    background-position-x: 100%;
+    background-blend-mode: luminosity;
+    background-attachment: scroll;
+    transition: width 2s, opacity 2s;
+}
+#rocket{
+    position: fixed;
+    top: 61px;
+    left: 0px;
+    width: 0px;
+    opacity: 0;
+    /* height: 100%; */
+    height: 92%;
+    background-image: url(images/anonym.jpg);
+    background-position-x: -52px;
+    background-position-y: 75px;
+    background-size: 81%;
+    background-repeat: no-repeat;
+    background-color: #131313;
+    z-index: 1000;
+    background-position-x: 100%;
+    background-blend-mode: luminosity;
+    background-attachment: scroll;
+    transition: width 2s, opacity 2s;
+}
+
+.intro{
+    position: absolute;
+    top:75%;
+    color:black;
+    font-family: 'heading';
+    font-size:1.65vw;
+    width: 100%;
+    text-align: center;
+}
+#item3 .intro
+
+
+
+
+p {
+    color: white;font-family:content;
+}
+
+#harleyCover{
+    position: absolute;
+    display: block;
+	font-family: 'icon3';
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    background-color: black;
+    opacity: 0.85;
+    margin-top:20px;
+    transition: top 1.5s;
+    font-size: 90%;
+    font-weight: lighter;
+    color:white;
+}
+.centerall{
+    text-align: center;
+    padding: 2vh;
+}
+		.centerall li{
+			color: white;
+		}
+#harleyCover p
+{
+padding: 3px;
+letter-spacing: 2px;
+	font-family: 'icon3';
+font-size:2vh;
+}
+#harleyCover a
+{
+    font-family: 'heading';
+    font-size:3Vh;
+    text-decoration: none;
+    
+    color: skyblue;
+}
+
+
+
+#item1:hover #harleyCover {top:0%;
+margin-top:0px;}
+
+#droneCover{
+
+    position: absolute;
+    display: block;
+	font-family: 'icon3';
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    background-color: black;
+    opacity: 0.85;
+    margin: 0px;
+    transition: top 1.5s;
+    font-size: 90%;
+    padding: 0px;
+    font-weight: lighter;
+    color:white;
+}
+#droneCover p
+{
+padding: 3px;
+letter-spacing: 2px;
+	font-family: 'icon3';
+font-size: 2vh;
+}
+
+#droneCover a{
+font-family: 'heading';
+font-size:3Vh;
+text-decoration: none;
+
+color: skyblue;
+}
+
+#item2:hover #droneCover {top:0%;}
+
+
+#hackerCover{
+    
+    position: relative;
+    display: block;
+	font-family: 'icon3';
+    width: 100%;
+    height: 0%;
+    background-color: black;
+    margin: 0px;
+    transition: height 1.5s, opacity 1.5s;
+    font-size: 90%;
+    padding: 0px;
+    font-weight: lighter;
+    color: white;
+    z-index: 1000;
+    opacity: 0;
+}
+.link
+{
+text-decoration: none;
+color: skyblue;
+font-size: 3vh;
+	font-family: 'icon3';
+}
+#hackerCover p
+{
+padding: 3px;
+letter-spacing: 2px;
+	font-family: 'icon3';
+font-size: 2vh;
+}
+
+#hackerCover a{
+font-family: 'heading';
+font-size:3Vh;
+text-decoration: none;
+
+color: skyblue;
+}
+
+#item3:hover #hackerCover {height:100%;opacity:1;}
+
+
+#RocketCover{
+    position:relative;
+    display: block;
+	font-family: 'icon3';
+    width: 100%;
+    height: 0%;
+    background-color: black;
+    margin: 0px;
+    transition: height 1.5s, opacity 1.5s;
+    font-size: 90%;
+    padding: 0px;
+    font-weight: lighter;
+    color: white;
+    z-index: 1000;
+    opacity: 0;
+}
+#RocketCover p
+{
+padding: 3px;
+letter-spacing: 2px;
+	font-family: 'icon3';
+font-size:2vh;
+}
+
+#RocketCover a{
+font-family: 'heading';
+font-size:3Vh;
+text-decoration: none;
+
+color: skyblue;
+}
+
+#item4:hover #RocketCover {height:100%;opacity: 0.85;}
+
+
+
+
+#buttonToEnter {position: relative;
+    margin: 10px 4%;
+    display: inline-block;
+    width: 24%;
+    height: 21%;
+    background-color: #07abab;
+    border: 0px;
+    font-family: 'heading';
+    font-size:1.75vw;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+    .menu{
+        display: inline-block;
+    width: 14%;
+    height: 79px;
+    left: 20%;
+    /* top: -5%; */
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background-color: deepskyblue;
+    top: 0%;
+    }
+    #menubar{
+
+        display: block;
+    /* position: absolute; */
+    right: 0;
+    position: relative;
+    top: 9%;
+    }
+    .display{float: left;
+        width: 56.8%;
+        height: 53%;
+        background-color: #640700;
+        opacity: 1;
+        display: block;
+        transition: width 0.6s, opacity 0.5s;
+        position: absolute;
+        left: 20%;
+        top: 21%;
+    }
+
+    #close{position: absolute;
+        z-index: 100;
+        width: 30px;
+        height: 30px;
+        top: 10%;
+        /* left: 0px; */
+        right: 0px;
+        background-color: bisque;}
+
+    }

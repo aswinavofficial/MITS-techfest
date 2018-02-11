@@ -1,0 +1,68 @@
+@font-face{
+	font-family: 'icon1';
+	src: url('../font/earthorbiter.ttf');
+}
+
+@font-face{
+	font-family: 'icon2';
+	src: url('../font/RawengulkSans.ttf');
+}
+
+@font-face{
+	font-family: 'icon3';
+	src: url('../font/Lora-Bold.ttf');
+}
+body{
+    font-family: 'icon2';
+}
+.campuscontainer {
+	color: white;
+    margin-bottom: 10vh;
+	font-size: 1.75vw;
+}
+
+.contentcenter {
+	text-align: center;
+	width: 90%;
+	margin: 0 5%;
+	border: 2px solid white;
+	padding: 3vh 3vw;
+}
+
+#content {
+	text-align: left;
+}
+
+#content h1,h2{
+	font-family: 'icon1';
+	color: skyblue;
+	margin-bottom: 10px;
+}
+
+#content p{
+	padding-left: 1.5vw;
+	margin-bottom: 7.5vh;
+}
+#content ul,ol{
+	padding: 1.5vw;
+}
+
+
+#register {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 5vh;
+}
+@media screen and (max-width:700px){
+	.campuscontainer{
+		font-size: 2vh;
+	}	
+	#content p{
+		margin-bottom: 2.5vh;
+	}
+
+}

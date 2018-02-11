@@ -1,0 +1,283 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face{
+	font-family: 'Sansation';
+	src: url('../font/earthorbiter.ttf');
+}
+@font-face{
+	font-family: 'noodle';
+	src: url('../font/RawengulkSans.html');
+}
+*{
+	margin: 0;
+}
+.container{
+	background-color: black;
+	padding: 10vh 10vw;
+	font-family: 'noodle';
+	color: azure;
+}	
+
+h2{
+	margin: 50px 0 10px;
+	font-family:'Sansation';
+	color:skyblue;
+	text-decoration-line:2px ; 
+  
+}
+
+h2:hover{
+	cursor: pointer;
+    }
+h3{
+	margin: 30px 0 10px;
+	font-family: 'Sansation';
+	color:skyblue;
+
+}
+
+li{
+    padding-left: 50px;
+	margin: 10px 0;
+    list-style: none;
+}
+#intro{
+    font-size: 20px;
+}
+/* hospitality begins here */
+
+.hospiback{
+  background-color:black;
+}
+
+.committee{
+    margin: 2% 5%;
+  padding: 5%;
+  font-family: 'icon2';
+  color: azure;
+border: 2px solid white;
+outline: 2px solid azure;
+    outline-offset: -8px;
+}
+.committee #intro
+{
+font-family: 'icon2';
+font-size: 25px;
+color: azure;
+text-align: center;
+}
+
+.committee h2
+{
+  margin-bottom: 5px;
+  margin-top: 10px;
+font-family: 'icon1';
+color:skyblue;
+font-size:20px;
+}
+.committee h3
+{
+  margin-top: 5vh;
+font-family: 'icon1';
+color:skyblue;
+font-size:20px;
+}
+.committee p
+{
+margin-top: 5px; 
+font-family: 'icon2';
+font-size:17px;
+color: azure;
+}
+
+.committee i
+{
+font-size: 17px;
+font-family: 'icon2';
+color: azure;
+}
+.committee strong
+{
+margin-top: 5px;
+font-family: 'icon2';
+font-size: 17px;
+color: azure;
+}
+
+.committee li{
+  font-family: 'icon2';
+  color: azure;
+  font-size: 17px;
+  padding:10px;
+}
+.accomodation{
+  text-align: center;
+}
+
+
+#accname
+{
+color: azure;
+font-size: 16px;
+font-family: 'icon1';
+}
+
+
+.accomodation button
+{
+margin-top: 5vh;
+padding: 10px;
+font-family: 'icon1';
+background-color:black;
+border: 2px solid azure;
+color: skyblue;
+cursor: pointer;
+font-size: 16px;
+}
+.accomodation button:hover
+{
+background-color:black;
+color:azure;
+border: 2px solid skyblue;
+}
+
+.ac{
+  text-align: center;
+}
+#acreg{
+  display: none;
+}
+.ac #apply
+{
+    margin-top: 5vh;
+    font-family: 'icon1';
+    background-color:black;
+    border: 2px solid azure;
+    padding: 7.5px;
+    color: skyblue;
+    cursor: pointer;
+    font-size: 16px;
+}
+.ac #apply:hover
+{
+    background-color:black;
+    color:azure;
+    border: 2px solid skyblue;
+}
+.ac #number1{
+    margin-top: 2vh;
+    border: none;
+  border-bottom: 2px solid azure;
+  background:black;
+  color:azure; 
+  font-size: 17px;
+  font-family: 'icon2';
+  text-decoration: bold;
+  padding-left:3px;
+}
+.ac #accname{
+font-family: 'icon1';
+color: skyblue;
+}
+
+.ac .acctext
+{
+margin-top: 5vh;
+font-family: 'icon1';
+color: skyblue;
+font-size: 15px; 
+}
+
+.ac .accuniqueID{
+    margin-top: 2vh;
+    border: none;
+  border-bottom: 2px solid azure;
+  background:black;
+  color:azure; 
+  font-size: 17px;
+  font-family: 'icon2';
+  text-decoration: bold;
+  padding-left:3px;
+}
+
+.ac .accname{
+    margin-top: 2vh;
+    border: none;
+/*  border-bottom: 2px solid azure;*/
+  background:black;
+  color:azure; 
+  font-size: 17px;
+  font-family: 'icon2';
+  text-decoration: bold;
+  padding-left:3px;
+
+}
+
+@media screen and (min-width:700px)
+{
+.ac #number1{
+    text-align: center;
+    border: none;
+  border-bottom: 2px solid azure;
+  background:black;
+  color:azure; 
+  font-size: 17px;
+  font-family: 'icon2';
+  text-decoration: bold;
+  padding:5px 15px;
+    margin: 0 5vw;
+}
+.ac #number1:focus{
+  opacity: 0.5;
+}
+
+.ac #accname{
+font-family: 'icon1';
+color: skyblue;
+}
+
+.ac .acctext
+{
+font-family: 'icon1';
+color: skyblue;
+font-size: 17px;
+width: 200px;
+    display: inline-block;
+}
+
+.ac .accuniqueID{
+    text-align: center;
+    border: none;
+  border-bottom: 2px solid azure;
+  background:black;
+  color:azure; 
+  font-size: 17px;
+  font-family: 'icon2';
+  text-decoration: bold;
+width: 200px;
+    padding: 3px 15px;
+    margin: 10px 10px;
+}
+
+.ac .accuniqueID:focus{
+  opacity: 0.5;
+}
+.ac .accname{
+    text-align: center;
+    border: none;
+/*  border-bottom: 2px solid azure;*/
+  background:black;
+  color:azure; 
+  font-size: 17px;
+  font-family: 'icon2';
+  text-decoration: bold;
+width: 200px;
+    padding: 3px 15px;
+    margin: 10px 10px;
+}
+
+}
+
+
+/* hospitality ends here */
+
